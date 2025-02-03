@@ -1,0 +1,8 @@
+body {
+  width: 600px; 
+  height: 600px;
+  margin: 0;
+  font-size: 14px;
+  position: relative;
+  color: #212121;
+}

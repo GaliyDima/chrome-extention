@@ -1,0 +1,1 @@
+export const isIFrame = () => window.self !== window.top;

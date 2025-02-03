@@ -1,0 +1,44 @@
+{
+  "name": "chrome-extention",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "cross-env NODE_ENV=development webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
+    "@types/chrome": "^0.0.300",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/styles": "^6.4.2",
+    "@mui/system": "^6.4.2",
+    "@pqina/pintura": "^8.91.7",
+    "@pqina/react-pintura": "^9.0.3",
+    "html2canvas": "^1.4.1",
+    "react": "^19.0.0",
+    "react-canvas-draw": "^1.2.1",
+    "react-dom": "^19.0.0"
+  }
+}

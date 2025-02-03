@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+
+  font-size: 16px;
+
+  position: relative;
+
+  color: #212121;
+  background: #fafafa;
+}
+
+.MuiButtonBase-root {
+  text-transform: none !important;
+}

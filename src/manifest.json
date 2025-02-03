@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Screenshot Guide",
+  "description": "Screenshot test task",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "downloads",
+    "identity",
+    "tabs",
+    "offscreen",
+    "webNavigation",
+    "activeTab",
+    "tabCapture",
+    "mediaCapture",
+    "mediaDevices",
+    "desktopCapture"
+  ],
+  "host_permissions": ["<all_urls>", "http://*/*", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "offscreen.bundle.js",
+        "popup.bundle.js",
+        "background.bundle.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

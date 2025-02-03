@@ -1,0 +1,1 @@
+export const DEFAULT_VIEWPORT_SIZE = { width: 1200, height: 600 };
